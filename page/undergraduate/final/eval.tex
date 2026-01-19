@@ -1,0 +1,40 @@
+% =================================================================
+% 去掉引导线
+% \addtocontents{toc}{\cftpagenumbersoff{chapter}} 
+% \phantomsection
+% \addcontentsline{toc}{chapter}{《浙江大学本科生毕业论文（设计）考核表》} 
+% \addtocontents{toc}{\cftpagenumberson{chapter}}
+% =================================================================
+
+% =================================================================
+% 保留引导线
+\addtocontents{toc}{\protect\renewcommand{\protect\cftchappagefont}{\protect\color{white}}}
+\phantomsection
+\addcontentsline{toc}{chapter}{《浙江大学本科生毕业论文（设计）考核表》}
+\addtocontents{toc}{\protect\renewcommand{\protect\cftchappagefont}{}}
+% =================================================================
+
+\begingroup
+    \renewcommand{\addcontentsline}[3]{} 
+    \sectionnonum[openany]{\zihao{-2} \huawenfangsong 毕~~业~~论~~文（设计）\quad 考~~核}
+\endgroup
+
+{
+    \bfseries
+    \huawenfangsong
+
+    \noindent {\zihao{4} 一、指导教师对毕业论文（设计）的评语：} \\
+    \vskip 50mm
+
+    \signature{指导教师（签名）}
+
+    \noindent {\zihao{4} 二、答辩小组对毕业论文（设计）的答辩评语及总评成绩：} \\
+
+    \mbox{} \vfill
+
+    % Example usage:
+    % \finaleval[10][15][5][70][100]
+    \finaleval[][][][][]
+
+    \signature{答辩小组负责人（签名）}
+}

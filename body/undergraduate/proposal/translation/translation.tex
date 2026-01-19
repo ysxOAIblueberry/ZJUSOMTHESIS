@@ -1,0 +1,32 @@
+\cleardoublepage
+
+\newrefsection
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+\chapter{外文翻译}
+
+\vskip 20pt
+
+\begin{center}
+    {\bfseries \zihao{-3} 外文题目} \\
+    作者1 \\
+    作者1工作单位 \\
+    作者2 \\
+    作者2工作单位 \\
+\end{center}
+
+\noindent {\bfseries \zihao{-3} 摘要：} 摘要内容
+
+\vskip 20pt
+
+\noindent {\bfseries 关键词：} 关键词1；关键词2；关键词3
+
+\inputbody{proposal/translation/intro}
+\inputbody{proposal/translation/conclusion}
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{3}}
+
+\begingroup
+    \linespreadsingle{}
+    \printbibliography[title={外文翻译参考文献}]
+\endgroup

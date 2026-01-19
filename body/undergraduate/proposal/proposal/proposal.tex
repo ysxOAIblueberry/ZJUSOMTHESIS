@@ -1,0 +1,26 @@
+\cleardoublepage
+\newrefsection
+\chapter{开题报告}
+
+\inputbody{proposal/proposal/background}
+% \inputbody{proposal/proposal/purpose}
+\inputbody{proposal/proposal/content}
+\inputbody{proposal/proposal/meaning}
+% \inputbody{proposal/proposal/innovation}
+
+\newpage
+\begingroup
+    \linespread{1.5}\selectfont
+    \renewcommand{\bibfont}{\zihao{-4}\rmfamily}
+    \setlength{\bibitemsep}{0pt}
+
+    \ctexset{
+        chapter = {
+            format = \raggedright\zihao{-3}\bfseries, 
+            beforeskip = 0pt, 
+            afterskip = 18pt
+        }
+    }
+
+    \printbibliography[title={参考文献}]
+\endgroup

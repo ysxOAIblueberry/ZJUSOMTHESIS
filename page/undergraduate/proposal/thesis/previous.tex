@@ -1,0 +1,36 @@
+\ifthenelse{\equal{\Period}{proposal}}
+{\addtocontents{toc}{\vspace{0.5em}}}
+{\startcontents[proposal]}
+
+% =================================================================
+% 去掉引导线
+% \addtocontents{toc}{\cftpagenumbersoff{chapter}} 
+% \phantomsection 
+% \addcontentsline{toc}{chapter}{指导教师对文献综述和开题报告的具体要求}
+% \addtocontents{toc}{\cftpagenumberson{chapter}}
+% =================================================================
+
+% =============================================================
+% 保留引导线
+\addtocontents{toc}{\protect\renewcommand{\protect\cftchappagefont}{\protect\color{white}}}
+\phantomsection
+\addcontentsline{toc}{chapter}{指导教师对文献综述和开题报告的具体要求}
+\addtocontents{toc}{\protect\renewcommand{\protect\cftchappagefont}{}}
+% =============================================================
+
+{   
+    {
+        \setlength{\parindent}{0em}
+        \par {\zihao{4}\bfseries 一、题目：\Title}
+        \par {\zihao{4}\bfseries 二、指导教师对文献综述和开题报告的具体要求：} 
+    }
+
+}
+
+\mbox{} \vfill
+
+\begin{flushright}
+        \bfseries \zihao{-4}
+        指导教师（签名） \underline{\multido{}{7}{\quad}} \\
+        年 \quad 月 \quad 日
+    \end{flushright}

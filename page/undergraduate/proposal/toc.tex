@@ -1,0 +1,29 @@
+\cleardoublepage{}
+
+\ifthenelse{\equal{\Period}{proposal}}
+{
+    \setlength{\cftsecindent}{1em}      
+    \setlength{\cftsubsecindent}{2em} 
+    \setlength{\cftsubsubsecindent}{3.5em}
+}
+
+\phantomsection
+\addcontentsline{toc}{chapter}{目录}
+
+\begin{spacing}{1.25}
+    \tableofcontents
+\end{spacing}
+
+\ifthenelse{\equal{\Period}{final}}
+{
+    \begin{spacing}{1.25}
+        \printcontents[proposal]{l}{0}{%
+            \setlength{\cftsecindent}{1em}      
+            \setlength{\cftsubsecindent}{2em} 
+            \setlength{\cftsubsubsecindent}{3.5em}
+            \vspace*{2em}   
+        }
+    \end{spacing}
+}
+
+\clearpage

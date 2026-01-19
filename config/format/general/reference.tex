@@ -1,0 +1,128 @@
+% =================================================================
+% 参考文献引用格式设置
+% =================================================================
+
+% 设置排序逻辑：英文在前，中文在后
+\DeclareSourcemap{
+    \maps[datatype=bibtex]{
+        \map{
+            \step[fieldsource=langid, match=chinese, final]
+            \step[fieldset=presort, fieldvalue={Z}]
+        }
+        \map{
+             \step[fieldsource=langid, notmatch=chinese, final]
+             \step[fieldset=presort, fieldvalue={A}]
+        }
+    }
+}
+
+% 设置序号格式：Times New Roman (rmfamily) + 小四号
+\DeclareFieldFormat{labelnumber}{\zihao{-4}\rmfamily #1}
+
+% 修正目录中参考文献的字体设置 (防止有些模板重置字体)
+\renewcommand{\bibfont}{\zihao{-4}\rmfamily}
+
+\AtEveryBibitem{%
+  \iffieldequalstr{langid}{chinese}{%
+		\renewcommand{\newunitpunct}{\adddot\hspace{0.5em}}%
+		\renewcommand{\nametitledelim}{\adddot\hspace{0.5em}}%
+  }{}
+}
+
+\DeclareNameFormat{my-western-name}{%
+   \namepartfamily
+   \addcomma\space
+   \namepartgiveni
+   \ifblank{\namepartgiveni}{}{\adddot}%
+   \usebibmacro{name:andothers}%
+}
+
+\AtBeginBibliography{
+    \DeclareNameAlias{english}{my-western-name}
+    
+    \renewcommand*{\finalnamedelim}{%
+		\ifcurrentlang{chinese}{，}{%
+			\addspace\&\addspace}%
+    }
+}
+
+\AtBeginBibliography{
+    \renewcommand*{\bibpagespunct}{\addcomma\space}
+    \renewcommand*{\newunitpunct}{\adddot\space}
+    \renewcommand*{\revsdnamepunct}{\addcomma\space}
+}
+
+% 学位论文：题名. 硕士学位论文, 学校, 年份.
+\DeclareBibliographyDriver{thesis}{%
+	\usebibmacro{bibindex}\usebibmacro{begentry}\usebibmacro{author/translator+others}%
+	\setunit{\labelnamepunct}\newblock\usebibmacro{title}\newunit\newblock%
+	\printfield{type}\setunit{\addcomma\space}\usebibmacro{institution+location+date}%
+	\newunit\newblock\usebibmacro{finentry}%
+}
+
+% 电子文献：题名. URL, 日期.
+\DeclareBibliographyDriver{online}{%
+	\usebibmacro{bibindex}\usebibmacro{begentry}\usebibmacro{author/editor+others/translator+others}%
+	\setunit{\labelnamepunct}\newblock\usebibmacro{title}\newunit\newblock%
+	\usebibmacro{url+urldate}\newunit\newblock\usebibmacro{finentry}%
+}
+
+% URL在前，日期在后
+\renewbibmacro*{url+urldate}{%
+  	\printfield{url}\setunit{\addcomma\space}\printurldate%
+}
+
+% \citepy：（Author, Year）
+\DeclareCiteCommand{\citepy}
+	{（}% 
+	{% 
+		\printnames{labelname}%
+		,\space               
+		\printfield{year}%
+	}
+	{;\space}% 
+	{）}% 
+
+% \citety： Author（Year）
+\DeclareCiteCommand{\citety}
+	{}%
+	{% 
+		\printnames{labelname}%
+		（% 
+		\printfield{year}%
+		）% 
+	}
+	{}%
+	{}%
+
+\hypersetup{hidelinks}
+
+\def\equationautorefname        {式}
+\def\footnoteautorefname        {脚注}
+\def\figureautorefname          {图}
+\def\tableautorefname           {表}
+\def\partautorefname            {篇}
+\def\chapterautorefname         {章}
+\def\sectionautorefname         {节}
+\def\subsectionautorefname      {小节}
+\def\subsubsectionautorefname   {小小节}
+\def\paragraphautorefname       {段落}
+\def\subparagraphautorefname    {子段落}
+\def\appendixautorefname        {附录}
+\def\FancyVerbLineautorefname   {行}
+\def\definitionautorefname      {定义}
+\def\theoremautorefname         {定理}
+\def\lemmaautorefname           {引理}
+\def\propositionautorefname     {命题}
+\def\corollaryautorefname       {推论}
+\def\assumptionautorefname      {假设}
+\def\exampleautorefname         {例}
+\def\propertyautorefname        {性质}
+\def\remarkautorefname          {注}
+\def\lstlistingname             {代码}
+\def\algorithmname              {算法}
+\def\algorithmcfname            {算法}
+\def\algorithmautorefname       {算法}
+\def\algotocloftname            {算法}
+
+\floatname{algorithm}{算法}

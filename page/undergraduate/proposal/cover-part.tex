@@ -1,0 +1,27 @@
+\cleardoublepage
+\ifthenelse{\equal{\Type}{design}}
+    {
+        \part{毕业设计开题报告}
+    }
+    {
+        \addtocontents{toc}{\vspace{-1.5em}}
+        \part{文献综述和开题报告}
+        \addtocontents{toc}{\vspace{0.5em}}
+
+        % =========================================================
+        % 去掉引导线
+        % \addtocontents{toc}{\cftpagenumbersoff{chapter}} 
+        % \phantomsection 
+        % \addcontentsline{toc}{chapter}{文献综述和开题报告封面}
+        % \addtocontents{toc}{\cftpagenumberson{chapter}}
+        % =========================================================
+
+        % =========================================================
+        % 保留引导线
+        \addtocontents{toc}{\protect\renewcommand{\protect\cftchappagefont}{\protect\color{white}}}
+        \phantomsection
+        \addcontentsline{toc}{chapter}{文献综述和开题报告封面}
+        \addtocontents{toc}{\protect\renewcommand{\protect\cftchappagefont}{}}
+        % =========================================================
+
+    }

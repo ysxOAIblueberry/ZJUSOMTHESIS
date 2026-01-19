@@ -1,0 +1,42 @@
+% use `texdoc biblatex` to get help
+
+% =================================================================
+% 参考文献需要一点手动设置（没辙了 sad~）
+% 如果涉及到多位作者（>1），需要有author和shortauthor两个字段，键值为希望在文中呈现的效果（author呈现在参考文献中，shortauthor呈现在正文引用中），如ref1和ref2，“&”前需加反斜杠“\”转义，键值用“{{}}”包裹表示强制原样输出
+% 必须要有langid字段：english or chinese
+% =================================================================
+
+% [1] 期刊
+@article{ref1,
+  author      = {{Aporgan, R. M., \& Hunt, S. D.}},
+  shortauthor = {{Aporgan \& Hunt}},
+  title       = {The commitment-trust theory of relationship marketing},
+  journal     = {Journal of Marketing},
+  year        = {1994},
+  volume      = {58},
+  number      = {3},
+  pages       = {20-38},
+  langid      = {english}
+}
+
+% [2] 专著
+@book{ref2,
+  author      = {{Beck, C. A. J., \& Sales, B. D.}},
+  shortauthor = {{Beck \& Sales}},
+  title       = {Family mediation: Facts, myths, and future prospects},
+  address     = {Washington, DC},
+  publisher   = {American Psychological Association},
+  year        = {2001},
+  pages       = {10-12},
+  langid      = {english}
+}
+
+% [3] 学位论文
+@thesis{ref3,
+  author      = {毛华森},
+  title       = {模块化专业课程计划的研究与开发},
+  institution = {浙江大学},
+  year        = {1989},
+  type        = {硕士学位论文},
+  langid      = {chinese}
+}

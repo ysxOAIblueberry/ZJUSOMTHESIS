@@ -1,0 +1,15 @@
+\cleardoublepage
+
+% =================================================================
+% 去掉引导线
+% \addtocontents{toc}{\cftpagenumbersoff{section}} 
+% \sectionnonumleft{作者简历}
+% \addtocontents{toc}{\cftpagenumberson{section}}
+% =================================================================
+
+% =================================================================
+% 保留引导线
+\addtocontents{toc}{\protect\renewcommand{\protect\cftsecpagefont}{\protect\color{white}}}
+\sectionnonumleft{作者简历}
+\addtocontents{toc}{\protect\renewcommand{\protect\cftsecpagefont}{}}
+% =================================================================

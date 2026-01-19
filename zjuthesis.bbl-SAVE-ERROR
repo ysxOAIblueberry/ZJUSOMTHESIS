@@ -1,0 +1,172 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{ref1}{article}{}
+      \name{author}{1}{}{%
+        {{hash=42fa143bcb110226fed21f8a69a00101}{%
+           family={{Aporgan, R. M., \& Hunt, S. D.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=42fa143bcb110226fed21f8a69a00101}{%
+           family={{Aporgan, R. M., \& Hunt, S. D.}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=a5371e2304e52ef1776afad3477909e1}{%
+           family={{Aporgan \& Hunt}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{a5371e2304e52ef1776afad3477909e1}
+      \strng{fullhash}{42fa143bcb110226fed21f8a69a00101}
+      \strng{bibnamehash}{a5371e2304e52ef1776afad3477909e1}
+      \strng{authorbibnamehash}{42fa143bcb110226fed21f8a69a00101}
+      \strng{authornamehash}{42fa143bcb110226fed21f8a69a00101}
+      \strng{authorfullhash}{42fa143bcb110226fed21f8a69a00101}
+      \strng{nameabibnamehash}{42fa143bcb110226fed21f8a69a00101}
+      \strng{nameanamehash}{42fa143bcb110226fed21f8a69a00101}
+      \strng{nameafullhash}{42fa143bcb110226fed21f8a69a00101}
+      \strng{shortauthorbibnamehash}{a5371e2304e52ef1776afad3477909e1}
+      \strng{shortauthornamehash}{a5371e2304e52ef1776afad3477909e1}
+      \strng{shortauthorfullhash}{a5371e2304e52ef1776afad3477909e1}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Marketing}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{number}{3}
+      \field{title}{The commitment-trust theory of relationship marketing}
+      \field{usera}{J}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{volume}{58}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{pages}{20\bibrangedash 38}
+      \range{pages}{19}
+      \keyw{ref1}
+    \endentry
+    \entry{ref2}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ac1adda625cdcdb5c32beb282b459a8d}{%
+           family={{Beck, C. A. J., \& Sales, B. D.}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=ac1adda625cdcdb5c32beb282b459a8d}{%
+           family={{Beck, C. A. J., \& Sales, B. D.}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \name{shortauthor}{1}{}{%
+        {{hash=3baf4ef555e0521e90ab140c050181e6}{%
+           family={{Beck \& Sales}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \list{location}{1}{%
+        {Washington, DC}%
+      }
+      \list{publisher}{1}{%
+        {American Psychological Association}%
+      }
+      \strng{namehash}{3baf4ef555e0521e90ab140c050181e6}
+      \strng{fullhash}{ac1adda625cdcdb5c32beb282b459a8d}
+      \strng{bibnamehash}{3baf4ef555e0521e90ab140c050181e6}
+      \strng{authorbibnamehash}{ac1adda625cdcdb5c32beb282b459a8d}
+      \strng{authornamehash}{ac1adda625cdcdb5c32beb282b459a8d}
+      \strng{authorfullhash}{ac1adda625cdcdb5c32beb282b459a8d}
+      \strng{nameabibnamehash}{ac1adda625cdcdb5c32beb282b459a8d}
+      \strng{nameanamehash}{ac1adda625cdcdb5c32beb282b459a8d}
+      \strng{nameafullhash}{ac1adda625cdcdb5c32beb282b459a8d}
+      \strng{shortauthorbibnamehash}{3baf4ef555e0521e90ab140c050181e6}
+      \strng{shortauthornamehash}{3baf4ef555e0521e90ab140c050181e6}
+      \strng{shortauthorfullhash}{3baf4ef555e0521e90ab140c050181e6}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{shortauthor}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{languageid}{english}
+      \field{lansortorder}{4}
+      \field{title}{Family mediation: Facts, myths, and future prospects}
+      \field{usera}{M}
+      \field{userd}{english}
+      \field{userf}{english}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{pages}{10\bibrangedash 12}
+      \range{pages}{3}
+      \keyw{ref2}
+    \endentry
+    \entry{ref3}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=5b5dbde0c677cfd616a7f3b197e663b1}{%
+           family={毛华森},
+           familyi={毛\bibinitperiod}}}%
+      }
+      \name{namea}{1}{}{%
+        {{hash=5b5dbde0c677cfd616a7f3b197e663b1}{%
+           family={毛华森},
+           familyi={毛\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {浙江大学}%
+      }
+      \list{language}{1}{%
+        {chinese}%
+      }
+      \strng{namehash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{fullhash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{bibnamehash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{authorbibnamehash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{authornamehash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{authorfullhash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{nameabibnamehash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{nameanamehash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \strng{nameafullhash}{5b5dbde0c677cfd616a7f3b197e663b1}
+      \field{sortinit}{毛}
+      \field{sortinithash}{831fee15a4748261657081c95b3b12af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{chinese}
+      \field{languageid}{chinese}
+      \field{lansortorder}{1}
+      \field{title}{模块化专业课程计划的研究与开发}
+      \field{type}{硕士学位论文}
+      \field{usera}{D}
+      \field{userd}{chinese}
+      \field{userf}{chinese}
+      \field{year}{1989}
+      \field{dateera}{ce}
+      \keyw{ref3}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

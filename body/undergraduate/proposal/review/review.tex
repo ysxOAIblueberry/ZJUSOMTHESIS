@@ -1,0 +1,24 @@
+\cleardoublepage
+\newrefsection
+\chapter{文献综述}
+
+\inputbody{proposal/review/continuous}
+\inputbody{proposal/review/discrete}
+\inputbody{proposal/review/CurrentResearch}
+
+\newpage
+\begingroup
+    \linespread{1.5}\selectfont
+    \renewcommand{\bibfont}{\zihao{-4}\rmfamily}
+    \setlength{\bibitemsep}{0pt}
+
+    \ctexset{
+        chapter = {
+            format = \raggedright\zihao{-3}\bfseries, 
+            beforeskip = 0pt, 
+            afterskip = 18pt
+        }
+    }
+
+    \printbibliography[title={参考文献}]
+\endgroup

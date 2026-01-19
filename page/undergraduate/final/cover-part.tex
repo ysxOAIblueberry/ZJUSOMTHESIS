@@ -1,0 +1,15 @@
+\ifthenelse{\equal{\Period}{final}}
+{%
+  \cleardoublepage
+  \begingroup
+    \renewcommand{\addcontentsline}[3]{} 
+    \ifthenelse{\equal{\Type}{design}}
+        {
+            \part{毕业设计}
+        
+        }
+        {
+            \part{毕业论文（设计）}
+        }
+  \endgroup
+}{}
