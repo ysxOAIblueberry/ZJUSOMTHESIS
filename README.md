@@ -547,4 +547,8 @@
 
 ---
 
-**特别鸣谢**：本模板由[ZJUTHESIS](https://thenetadmin.github.io/zjuthesis)改编而来。
+**特别鸣谢：本模板由[ZJUTHESIS](https://thenetadmin.github.io/zjuthesis)改编而来。**
+
+**本项目代码基于 MIT 协议开源。**
+
+**学校标志与学校文件的版权归浙江大学所有。**
